@@ -1,0 +1,240 @@
+/*--------modal set up-------*/
+.modal{
+    z-index:1;
+    display:none;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgba(0,0,0,0.4);
+}
+.modal-content{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 90%;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.myPreviews{
+    max-width: 50%;
+    max-height: 100%;
+}
+
+.position-left-center{
+    position: absolute;
+    left: 5%;
+    top: 50%;
+}
+.position-right-center{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+.position-bottom-center{
+    position: absolute;
+    bottom: 10px;
+    left: 50%-80px;
+}
+.arrow-button{
+    height: 40px;
+    width: 40px;
+    z-index: 2;
+    font-size: 1.5em;
+    background-color: white;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+.arrow-button:hover{
+    background-color: rgba(0, 0, 0, 0.342);
+
+}
+#index-container{
+    margin: auto;
+
+}
+.index{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(255, 255, 255, 0.699);
+    border: 1px solid grey;
+    border-radius: 50%;
+    margin: 6px 2px;
+}
+#index-container .active{
+    background-color: rgba(128, 128, 128, 0.712);
+}
+
+/*-----------------------------------*/
+#more{
+    padding-left: 0;
+    margin-left: 0;
+}
+
+/**---header-login-dropdown set-up---*/
+.top-nav{
+    position: relative;
+}
+
+button:hover{
+    cursor: pointer;
+}
+.header-dropdown-container{
+    height: 30px;
+    width: max-content;
+  }
+  
+  .header-dropdown-button{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    border: none;
+    font-weight: bold;
+    color: #dfdfab;
+    font-size: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+
+  }
+  .header-dropdown-button:hover{
+      background-color: #111;
+  }
+  .header-dropdown-content{
+    display: none;
+    position: absolute;
+    right: 280px;
+    top: 100%-5px;
+    overflow:auto;
+    border: thin solid gray;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0 rgba(255, 166, 0, 0.575);
+    z-index: 3;
+  }
+  .header-dropdown-content *{
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 1em;
+  }
+  .header-dropdown-content a{
+      color: white;
+}
+.header-dropdown-content a:hover{
+    background-color: white;
+}
+  .header-dropdown-container:hover .header-dropdown-content{
+    display: block;
+  }
+  .header-dropdown-login{
+    background-color: rgb(248, 166, 14);
+    border: 2px solid rgba(0, 0, 0, 0.788);
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    transition: 0.2s;
+    display: block;
+  }
+  a.header-dropdown-login:hover{
+    background-color: rgba(0, 0, 0, 0.671);
+    cursor: pointer;
+  }
+a.anchor{
+    color: rgb(0, 119, 255);
+    font-size: 0.8em;
+}
+
+.header-dropdown-content .signup:hover{
+    background-color: white;
+    text-decoration: underline;
+}
+  /*----------------------------*/
+
+#promotion1:hover{
+    cursor: pointer;
+}
+/**----------------new login----------------*/
+.newlogin{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 300px;
+    text-align: center;
+    min-height: 400px;
+    display: block;
+}
+.newlogin div{
+    
+    margin: 20px 0;
+}
+.newlogin input{
+    width: 100%;
+    height: 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+
+}
+
+.loginSubmitButton{
+    outline: none;
+    background-color: orange;
+    color: white;
+    font-size: 1em;
+    margin-right: 0;
+}
+.loginSubmitButton:hover{
+    background-color: rgba(0, 0, 0, 0.671);
+    cursor: pointer;
+}
+#policy{
+    width: 15px;
+    display: inline-block;
+}
+.needcheck{
+    position: relative;
+}
+.warning{
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    font-size: 0.8em;
+    color: red;
+}
+#signupmsg{
+    margin-top: 80px;
+}
+.right{
+    width:140px;
+}
+#cart{
+    padding: auto;
+}
+
+.navAnchor {
+    font-weight: bold;
+    display: block;
+    color: #dfdfab;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+  .navAnchor:hover{
+    background-color: #111;
+    cursor: pointer;
+  
+  }
+  .navAnchor.active {
+    background-color: #f6ee7d;
+    color: black;
+  }
+  

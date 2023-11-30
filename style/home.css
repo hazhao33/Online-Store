@@ -1,0 +1,234 @@
+/*--------logo---------*/
+.logo-space a img {
+  display: block;
+  height: 140px;
+  padding: 0;
+  border-style: groove;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-space a img:hover {opacity: 0.7;}
+/*--------header-------navigation--------*/
+body {
+  background-color:rgb(248, 244, 221);
+  height: 100%;
+  margin: 0 5%;
+}
+#searchbar {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: white;
+  padding: 9px 50px 9px 10px;
+  margin: 3px;
+}
+.top-nav ul {
+  list-style-type: none;
+  border-style: groove;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.top-nav li {
+  float: left;
+}
+.top-nav a {
+  font-weight: bold;
+  display: block;
+  color: #dfdfab;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.top-nav a:hover{
+  background-color: #111;
+}
+.top-nav a.active {
+  background-color: #f6ee7d;
+  color: black;
+}
+
+
+.top-nav li.right {
+  float: right;
+}
+/*-----promotion-------*/
+.promotion1 a {
+  background-color: #e9574c;
+  color: black;
+  padding: 6px;
+  font-weight:bold;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: auto;
+}
+.promotion1 a:hover {
+  background-color: #f32617;
+}
+.promotion1 p {
+  font-size: 30px;
+  text-align: center;
+}
+/*--------Slideshow-------------*/
+.mySlides {
+display: none;
+box-sizing: border-box;
+}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px soild black;
+}
+
+.picName {
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.1s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.33%;
+  padding: 5px 15px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column img {
+  border-radius: 10px;
+  width: 800px;
+  height: 480px;
+  object-fit: contain;
+  padding-bottom: 50px;
+  margin: 10px 10px;
+}
+/*-------main----------*/
+.background-image {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid rgb(0, 0, 0);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px auto;
+}
+.item1 {
+  position: relative;
+  background-image: url(../photo/window\ background.jpg);
+  height: 750px
+}
+.item2 {
+  position: relative;
+  background-image: url(../photo/apple\ background.jpg);
+  height: 750px
+}
+.item3 {
+  position: relative;
+  background-image: url(../photo/chrome\ background.jpg);
+  height: 750px
+}
+.shop-button {
+  border-radius: 15px;
+  box-shadow: 5px 5px gray;
+  background-color: #f6ee7d;
+  color: black;
+  padding: 17px 45px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.shop-button:hover {
+  background-color: rgb(248, 244, 221);
+}
+/*-----------------footer------------------*/
+.bot-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.bot-nav li {float: left;}
+.bot-nav a {
+  display: block;
+  text-align: center;
+}
+.bot-nav li.right {
+  float: right;
+}
+.blogo {
+  border-color: black;
+  border-style: solid;
+  height: 100px;
+  margin: 0 50px;
+}
+.blogo:hover {opacity: 0.7;}
+.f-text {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  margin: 40px 50px;
+}
+.f-text:hover {color: #555555;;}
+.f-icon {
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(248, 244, 221);
+  height: 40px;
+  margin: 40px 50px;
+}
+.f-icon:hover {opacity: 0.7;}
+.footer {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  text-align: center;
+}

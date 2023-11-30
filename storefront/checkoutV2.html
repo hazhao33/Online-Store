@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ESpace Cart</title>
+
+    <link rel="stylesheet" href="../style/checkoutV2.css">
+    <link rel="stylesheet" href="../style/headFoot.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="../javascript/login.js"></script>
+
+</head>
+
+<body onload="checkUser();checkCart();">
+    <div class="logo-space" id="toplogo">
+        <a href="../storefront/home.html"><img src="../photo/logo2.png" class="h-logo"></a>
+    </div>
+    <div class="top-nav">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./allProduct.html">Product</a></li>
+            <li class="right"><a class="active" href="./cart.php" id="cart">Cart<span id="cartNumber"></span></a></li>
+            <li class="right"><a href="./cart.php" id="cart">User</a></li>
+            <li class="right">
+                <div class="header-dropdown-container" id="userLogOuted">
+                    <button type="button" class="header-dropdown-button">Login</button>
+                    <div class="header-dropdown-content">
+                        <div><a href="../storefront/login.php" class="header-dropdown-login"
+                                style="font-size: 1em;" onclick="saveURL();">Login</a></div>
+                        <div><span>Not a user?<a href="../storefront/signup.php" class="anchor">Sign up
+                                    today.</a></span></div>
+                    </div>
+                </div>
+                <div class="header-dropdown-container" id="userLogined" style="display: none;">
+                    <button type="button" class="header-dropdown-button" id="nav-user"></button>
+                    <div class="header-dropdown-content">
+                        <div><button class="header-dropdown-login" onclick="logOut();">Log out</button></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <!---------------------------------------------------------------->
+    <div class="element-container">
+        <div class="item-list-container">
+            <div class="item-img">
+                <p class="header">Product</p>
+                <p class="info"><img src="../photo/apple1.jpg" class="inlineImg" alt=""></p>
+                <p class="info"></p>
+
+            </div>
+            <div class="item-quantity">
+                <p class="header">Quantity</p>
+                <p class="info">1X</p>
+                <p class="info">2X</p>
+            </div>
+            <div class="item-name">
+                <p class="header">Product Name</p>
+                <p class="info">Microsoft Studio Laptop</p>
+                <p class="info">Razer Laptop</p>
+            </div>
+            <div class="item-price">
+                <p class="header">Price</p>
+                <p class="info">$1000</p>
+                <p class="info">$1200</p>
+                <p>gocart</p>
+            </div>
+        </div>
+
+        <div class="shipping-info">
+            <form>
+                <h2 class="shipping title">Shipping Address</h2>
+                <input placeholder="Full Name" type="text" id="shipping-name" name="shipping-name" required>
+                <spam class="error-shipping-name"></spam>
+                <br>
+                <input placeholder="Adress" type="text" id="shipping-address" name="shipping-address" required>
+                <spam class="error-shipping-address"></spam>
+                <br>
+                <input placeholder="City" type="text" id="shipping-city" name="shipping-city" required>
+                <spam class="error-shipping-city"></spam>
+                <br>
+                <input placeholder="State" type="text" id="shipping-state" name="shipping-state" required>
+                <spam class="error-shipping-state"></spam>
+                <br>
+                <input placeholder="Zip Code" type="text" id="shipping-zipcode" name="shipping-zipcode" required>
+                <spam class="error-shipping-zipcode"></spam>
+                <br>
+                <input placeholder="Country" type="text" id="shipping-country" name="shipping-country" required>
+                <spam class="error-shipping-country"></spam>
+                <br>
+                <input class="shipping-submit" type="submit" value="Save">
+            </form>
+        </div>
+
+        <div class="payment-info">
+            <form>
+                <h2 class="payment title">Payment Information</h2>
+                <input placeholder="Full Name" type="text" id="payment-name" name="payment-name" required>
+                <spam class="error-payment-name"></spam>
+                <br>
+                <input placeholder="Card Number" type="text" id="payment-creditcardnumber" name="payment-creditcardnumber"
+                    required>
+                <spam class="error-payment-creditcardnumber"></spam>
+                <br>
+                <input placeholder="Expiration Date" type="text" id="payment-CCV" name="payment-expdate" required>
+                <spam class="error-payment-CCV"></spam>
+                <br>
+                <input placeholder="CVV" type="text" id="payment-expdate" name="payment-CCV" required>
+                <spam class="error-payment-expdate"></spam>
+                <br>
+                <br>
+                <input class="payment-submit" type="submit" value="Save">
+            </form>
+        </div>
+
+        <div class="order-summary-container">
+            <h2 class="order title">Order Summary</h2>
+            <div class="total-text">
+                <ul>
+                    <li>Subtotal :</li>
+                    <li>Tax :</li>
+                    <li>Shipping :</li>
+                    <li><strong>Total :</strong></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="total-info">
+                    <li id="order-subtotal">$3400</li>
+                    <li id="order-tax">$340</li>
+                    <li id="order-shipping">$0</li>
+                    <li id="order-total"><strong>$3740</strong></li>
+                </ul>
+            </div>
+            <div class="order-btn">
+                <button class="submit-btn" type="button">Place your order</button>
+            </div>
+
+        </div>
+    </div>
+    <!---------------------------------------------------------------->
+
+
+
+    <div class="bot-nav">
+        <ul>
+            <li><a href="#toplogo"><img class="blogo" src="../photo/logo2.png" alt="logo"></a></li>
+            <li><a class="f-text" href="./about.html">About</a></li>
+            <li><a class="f-text" href="./faq.html">FAQ</a></li>
+            <li class="right"><a href="#twitter"><img class="ficon ficon-r" src="../photo/twitter.png"
+                        alt="twitter"></a></li>
+            <li class="right"><a href="#facebook"><img class="ficon ficon-m" src="../photo/facebook.png"
+                        alt="facebook"></a></li>
+            <li class="right"><a href="#instagram"><img class="ficon ficon-l" src="../photo/instagram.png"
+                        alt="instagram"></a></li>
+        </ul>
+    </div>
+    <div class="footer">© 2022 ESpace, Inc.</div>
+</body>
+
+</html>

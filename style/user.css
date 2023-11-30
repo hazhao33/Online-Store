@@ -1,0 +1,219 @@
+/*----------------logo--------------------*/
+.logo-space a img {
+  display: block;
+  height: 140px;
+  padding: 0;
+  border-style: groove;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logo-space a img:hover {opacity: 0.7;}
+/*--------header-------navigation--------*/
+.logo-space { grid-area: logo; }
+.top-nav { grid-area: tnav; }
+.bot-nav { grid-area: bnav; }
+.footer { grid-area: footer; }
+body {
+  background-color:rgb(248, 244, 221);
+  height: 100%;
+  margin: 0 5%;
+}
+#searchbar {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 18px;
+  background-color: white;
+  padding: 9px 50px 9px 10px;
+  margin: 3px;
+}
+.top-nav ul {
+  list-style-type: none;
+  border-style: groove;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+.top-nav li {
+  float: left;
+}
+.top-nav a {
+  font-weight: bold;
+  display: block;
+  color: #dfdfab;
+  text-align: center;
+  font-size: 25px;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.top-nav a:hover:not(.active){
+  background-color: #111;
+}
+.top-nav a.active {
+  background-color: #f6ee7d;
+  color: black;
+}
+.top-nav li.right {
+  float: right;
+}
+@media screen and (max-width:800px) {
+  .top-nav li.right,
+  .top-nav li {float: none;}
+  body {margin: 0 2px};
+}
+/*-----------------footer------------------*/
+.bot-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.bot-nav li {float: left;}
+.bot-nav a {
+  display: block;
+  text-align: center;
+}
+.bot-nav li.right {
+  float: right;
+}
+@media screen and (max-width:800px) {
+  .bot-nav li.right,
+  .bot-nav li {float: none;}
+}
+.blogo {
+  border-color: black;
+  border-style: solid;
+  height: 100px;
+  margin: 0 50px;
+}
+.blogo:hover {opacity: 0.7;}
+.f-text {
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  margin: 40px 50px;
+}
+.f-text:hover {color: #555555;;}
+.f-icon {
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: rgb(248, 244, 221);
+  height: 40px;
+  margin: 40px 50px;
+}
+.f-icon:hover {opacity: 0.7;}
+.footer {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  text-align: center;
+}
+/*----------main--section------------*/
+.sidenav { grid-area: sidenav;}
+
+.accountInfo { grid-area: accountInfo;}
+.adressInfo { grid-area: adressInfo;}
+.paymentInfo { grid-area: paymentInfo;}
+.permissionInfo { grid-area: permissionInfo;}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  	'logo logo'
+    'tnav tnav'
+    'sidenav accountInfo'
+    'sidenav adressInfo'
+    'sidenav paymentInfo'
+    'sidenav permissionInfo'
+    'bnav bnav'
+    'footer footer';
+  gap: 0;
+  padding: 0;
+  height: 100%;
+}
+.grid-container > div {
+  text-align: center;
+}
+/*-------------sidenav--------------*/
+.sidenav {
+  width: 100px;
+  padding: 50px 30px 0 0;
+  border-right: 1px solid #000000;
+  margin: 200px auto 1400px auto;
+  position: sticky;
+  top: 50px;
+}
+.sidenav a {
+  text-decoration: none;
+  color: #000000;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+}
+.sidenav a:hover {
+  color:rgb(77, 76, 76);
+  text-decoration: underline;
+}
+.sidenav a.factive {
+  color: rgb(197, 114, 5);
+  font-weight: bold;
+}
+.sidenav a:hover:not(.factive){
+  color: #8a867f;
+}
+/*-------------item--------------*/
+.accountInfo {margin: 50px auto 10px 10px;}
+.adressInfo, .paymentInfo {margin: 10px auto 10px 10px;}
+.permissionInfo {margin: 10px auto 50px 10px;}
+
+.accountInfo, .adressInfo, .paymentInfo, .permissionInfo {
+  width: 1000px;
+  border-bottom: 1px solid #333;
+}
+form {padding: 0 10px 20px 10px;}
+label, input {
+  padding: 5px 0 5px 0;
+  margin: 5px 0 5px 0;
+}
+.submit {
+  background-color: white;
+  border: 1px solid black;
+  border-radius:5px;
+  padding: 8px 16px;
+  margin: 20px 0 30px 0;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #f6ee7d;
+}
+.submit:hover {
+  background-color: #dfdfab;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+h1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+#user-info li {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0;
+  padding: 2px 0;
+}
+span {
+  color: red; 
+  font-size: 12px;
+}

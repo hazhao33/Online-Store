@@ -1,0 +1,108 @@
+/*--------logo---------*/
+.logo-space a img {
+    display: block;
+    height: 140px;
+    padding: 0;
+    border-style: groove;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo-space a img:hover {opacity: 0.7;}
+/*--------header-------navigation--------*/
+  #searchbar {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: white;
+    padding: 9px 50px 9px 10px;
+    margin: 3px;
+  }
+  .top-nav {
+    margin: 0 15px 0 15px;
+  }
+  .top-nav ul {
+    list-style-type: none;
+    border-style: groove;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  .top-nav li {
+    float: left;
+  }
+  .top-nav a {
+    font-weight: bold;
+    display: block;
+    color: #dfdfab;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px 30px;
+    text-decoration: none;
+  }
+  .top-nav a:hover:not(.active){
+    background-color: #111;
+  }
+  .top-nav a.active {
+    background-color: #f6ee7d;
+    color: black;
+  }
+  .top-nav li.right {
+    float: right;
+  }
+
+  @media screen and (max-width: 1000px) {
+    .logo-space a img {height: 100px;}
+  }
+ /*-----------------footer------------------*/
+ .bot-nav {
+     margin: 250px 0 0 0;
+ }
+.bot-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .bot-nav li {float: left;}
+  .bot-nav a {
+    display: block;
+    text-align: center;
+  }
+  .bot-nav li.right {
+    float: right;
+  }
+  .blogo {
+    border-color: black;
+    height: 60px;
+    margin: 40px 50px 0 75px;
+  }
+  .blogo:hover {opacity: 0.7;}
+  .f-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    margin: 60px 0 0 50px;
+  }
+  .f-text:hover {color: #555555;;}
+
+  .ficon:hover {opacity: 0.7;}
+  .ficon-r {
+    background-color: rgb(248, 244, 221);
+    height: 30px;
+    margin: 60px 85px 0 10px;
+  }
+  .ficon-m, .ficon-l {
+    background-color: rgb(248, 244, 221);
+    height: 30px;
+    margin: 60px 10px 0 10px;
+  }
+
+  .footer {
+    margin: 0 0 60px 0;
+    text-align: center;
+  }

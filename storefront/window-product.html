@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>2021 microsoft MacBook Pro (14-inch, microsoft M1 Pro chip with 8‑core CPU and 14‑core GPU, 16GB RAM, 512GB SSD) - Space Gray </title>
+    <link rel="stylesheet" href="../style/product.css">
+
+    <script src="../javascript/product.js"></script>
+    <script src="../javascript/login.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+
+  </head>  
+    <body onload="checkUser();checkCart();">
+
+    <div class="grid-container">
+      <div class="logo-space" id="toplogo">
+        <a href="../storefront/home.html"><img src="../photo/logo2.png" class="h-logo"></a>
+      </div>
+      <div class="top-nav">
+        <ul>
+          <li><a class="active" href="./home.html">Home</a></li>
+          <li><a href="./allProduct.html">Product</a></li>
+      <li class="right"><span class="navAnchor" id="cart" onclick="checkLoginStatus('../storefront/cart.php');">Cart<span id="cartNumber"></span></span></li>
+      <li class="right"><span class="navAnchor" onclick="checkLoginStatus('../storefront/user.html');">User</span></li>
+        <li class="right">
+          <div class="header-dropdown-container" id="userLogOuted">
+            <button type="button" class="header-dropdown-button">Login</button>
+            <div class="header-dropdown-content">
+              <div><a href="../storefront/login.php" class="header-dropdown-login" style="font-size: 1em;" onclick="saveURL();">Login</a></div>
+              <div><span>Not a user?<a href="../storefront/signup.php" class="anchor">Sign up today.</a></span></div>
+            </div>
+          </div>
+          <div class="header-dropdown-container" id="userLogined" style="display: none;">
+            <button type="button" class="header-dropdown-button" id="nav-user"></button>
+            <div class="header-dropdown-content">
+              <div><button class="header-dropdown-login" onclick="logOut();">Log out</button></div>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+
+
+
+
+
+      <div class="promotion1">
+        <a href="../storefront/signup.php" id="promotion1">
+          FREE STANDARD SHIPPING & RETURN | JOIN NOW GET 25% Off
+        </a>
+        <p>The Best way to buy the laptops you love.</p>
+      </div>
+
+      <center>
+        <section class="content">
+        <div class="product">
+            <div class="preview">
+                <div class="icon-container">
+                    <div class="singleicon p1">
+                        <div class="icon"><img src="../photo/product/microsoft/p1.jpg" alt="" onClick="changePreview(this);currentSlide(1);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p1.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p2">
+                        <div class="icon"><img src="../photo/product/microsoft/p2.jpg" alt="" onClick="changePreview(this);currentSlide(2);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p2.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p3">
+                        <div class="icon"><img src="../photo/product/microsoft/p3.jpg" alt="" onClick="changePreview(this);currentSlide(3);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p3.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p4">
+                        <div class="icon"><img src="../photo/product/microsoft/p4.jpg" alt="" onClick="changePreview(this);currentSlide(4);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p4.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p5">
+                        <div class="icon"><img src="../photo/product/microsoft/p5.jpg" alt="" onClick="changePreview(this);currentSlide(5);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p5.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p6">
+                        <div class="icon"><img src="../photo/product/microsoft/p6.jpg" alt="" onClick="changePreview(this);currentSlide(6);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p6.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p7">
+                        <div class="icon"><img src="../photo/product/microsoft/p7.jpg" alt="" onClick="changePreview(this);currentSlide(7);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p7.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p8">
+                        <div class="icon"><img src="../photo/product/microsoft/p8.jpg" alt="" onClick="changePreview(this);currentSlide(8);"></div>
+                        <div class="previewholder"><img src="../photo/product/microsoft/p8.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="preview-area">
+                    <img src="../photo/product/microsoft/p1.jpg" alt="" id="preview-area" onClick="openModal();currentSlide(slideIndex);">
+                </div>
+            </div>
+            <div id="modal-slide" class="modal">
+                <div id="modal-slide-content" class="modal-content">
+                    <img src="../photo/product/microsoft/p1.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p2.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p3.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p4.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p5.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p6.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p7.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/microsoft/p8.jpg" class="myPreviews" onclick="closeModal();">
+
+                    <button class="arrow-button position-left-center" onclick="plusDivs(-1);">&#10094;</button>
+                    <button class="arrow-button position-right-center" onclick="plusDivs(1);">&#10095;</button>
+                    <div id="index-container" class="position-bottom-center">
+                        <div class="index" onclick="currentSlide(1)"></div>
+                        <div class="index" onclick="currentSlide(2)"></div>
+                        <div class="index" onclick="currentSlide(3)"></div>
+                        <div class="index" onclick="currentSlide(4)"></div>
+                        <div class="index" onclick="currentSlide(5)"></div>
+                        <div class="index" onclick="currentSlide(6)"></div>
+                        <div class="index" onclick="currentSlide(7)"></div>
+                        <div class="index" onclick="currentSlide(8)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="product-name"><p>2021 microsoft MacBook Pro (14-inch, microsoft M1 Pro chip with 8‑core CPU and 14‑core GPU, 16GB RAM, 512GB SSD) - Space Gray </p></div>
+                <div class="interaction">
+                    <div name="rating"><img src="../photo/product/rating.png" alt="rating"></div>
+                    <div class="answer"><a href="#question">60 answered question</a></div>
+                    <div class="share dropdown-container">
+                        <div class="dropdown-button"><img src="../photo/product/share.png" alt="share">SHARE</div>
+                        <div class="dropdown-content">
+                            <a href="#"><img src="../photo/product/email.png" alt="email">Email</a>
+                            <a href="#"><img src="../photo/product/facebook.png" alt="facebook">Facebook</a>
+                            <a href="#"><img src="../photo/product/twitter.png" alt="twitter">Twitter</a>
+                            <a href="#"><img src="../photo/product/pinterest.png" alt="pinterest">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice">
+                    <div class="Memory choice-column">
+                        <p>Memory:</p>
+                        <div class="active"><a href="#">16GB</a></div>
+                        <div><a href="#">32GB</a></div>
+                    </div>
+
+                    <div class="capacity choice-column">
+                        <p>Capacity:</p>
+                        <div class="active"><a href="#">512GB</a></div>
+                        <div><a href="#">&nbsp;&nbsp;1TB</a></div>
+                    </div>
+                    <div class="CPU choice-column">
+                        <p>CPU:</p>
+                        <div class="active"><a href="#">Intel® Core™ i5</a></div>
+                        <div><a href="#">Intel® Core™ i7</a></div>
+                    </div>
+                </div>
+                <div class="product-briefspec">
+                    <table>
+                        <tr><td><b>Series</b></td><td>Surface Laptop</td></tr>
+                        <tr><td><b>Brand</b></td><td>microsoft</td></tr>
+                        <tr><td><b>Specific Uses For Product</b></td><td>Gaming, Business</td></tr>
+                        <tr><td><b>Screen Size</b></td><td>12.3 Inches</td></tr>
+                        <tr><td><b>Operating System</b></td><td>Window 11 Home</td></tr>
+                        <tr><td><b>Human Interface</b></td><td>Touchscreen</td></tr>
+                        <tr><td><b>CPU Manufacturer</b></td><td>Intel®</td></tr>
+                        <tr><td><b>Card Description</b></td><td>Integrated</td></tr>
+                        <tr><td><b>Color</b></td><td>Platinum</td></tr>
+                        <tr><td><b>Connectivity Technology</b></td><td>Bluetooth, Wi-Fi</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="product-addtocart">
+            <div>
+                <p>Surface Studio 14" Platinum 512GB 8-Core CPU 14-Core GPU</p>
+                <p>$<font size="+3">1799</font>.99</p>
+            </div>
+            <div>
+                <button type="button" onclick="checkIfLogin(1,'Microsoft Surface Studio',1799.99,'../photo/window1.jpeg');">Add To Cart</button>
+            </div>
+        </div>
+        <p><font style="font-size: 1.5em;text-decoration: underline;">From the Manufacturer</font></p>
+        <div><img src="../photo/product/microsoft/surface_advertisement.png" alt="surface_advertisement" width="100%"></div>
+        <div>
+            <table width="70%" cellspacing="0" cellpadding="5" align="center" valign="top" class="detail-technics">
+                <h2><center>Technical Details</center></h2>
+                <tr><td><b>Standing screen display size</b></td><td>12.3 Inches </td></tr>
+                <tr><td><b>Screen Resolution </b></td><td>2736x1824 </td></tr>
+                <tr><td><b>Max Screen Resolution </b></td><td>2400 x 1600 Pixels </td></tr>
+                <tr><td><b>Processor </b></td><td>2.6 GHz apple_ci5 </td></tr>
+                <tr><td><b>RAM </b></td><td>8 GB LPDDR4X </td></tr>
+                <tr><td><b>Hard Drive </b></td><td>256 GB SSD </td></tr>
+                <tr><td><b>Graphics Coprocessor </b></td><td>Intel Iris Xe Graphics </td></tr>
+                <tr><td><b>Chipset Brand </b></td><td>Intel </td></tr>
+                <tr><td><b>Card Description </b></td><td>Integrated </td></tr>
+                <tr><td><b>Graphics Card Ram Size </b></td><td>8 </td></tr>
+                <tr><td><b>Wireless Type </b></td><td>802.11ax </td></tr>
+                <tr><td><b>Average Battery Life (in hours) </b></td><td>13.5 Hours </td></tr>
+                <tr><td><b>ASIN </b></td><td>B07XF55D7Z </td></tr>
+                <tr><td><b>Date First Available </b></td><td>September 23, 2021 </td></tr>
+              </table>
+
+        </div>
+
+        <div class="product-display">
+            <p class="title">similar product</p>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/p1.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Surface Studio 14.4” Touch Screen i7 32GB Memory 1TB SSD</a></p><p><span class="cross">$2699.99</span>$2499.99</p></div>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/p1.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Surface Studio 14.4” Touch Screen i5 16GB Memory 512GB SSD</a></p><p>$1799.99</p></div>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/p1.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Surface Studio 14.4” Touch Screen i7 32GB Memory 256GB SSD</a></p><p>$1599.99</p></div>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/p1.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Surface Studio 14.4” Touch Screen i7 32GB Memory 2TB SSD</a></p><p>$2899.99</p></div>
+        </div>
+        <div class="product-display">
+            <p class="title">people buy it also buy</p>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/surface_pen.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">RENAISSER Stylus Pen for Surface</a></p><p>$49.99</p></div>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/microsoft_mouse.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Microsoft Bluetooth Ergonomic Mouse</a></p><p>$32.50</p></div>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/microsoft_keyboard.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Microsoft Designer Compact Keyboard</a></p><p>$69.00</p></div>
+            <div class="item" id=""><a href="../storefront/window-product.html"><img src="../photo/product/microsoft/surface_dock.jpg"></a><p class="item-name"><a href="../storefront/window-product.html">Microsoft Surface Dock 2</a></p><p>$229.00</p></div>
+        </div>
+        <div class="question" id="question">
+            <h1>Frequently ask question:</h1>
+            <div class="search">
+                <input onblur="checkEmpty(this);" type="search" placeholder="Type your question here"><button type="button">Search</button>
+            </div>
+            
+            <div>
+                <table>
+                    <tr><td>Q: </td><td>
+                        Is the stylus pen included? </td></tr>
+                    <tr><td>A: </td><td>Thank you for your question. Surface Slim Pen 2 is sold separately.</td></tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr><td>Q: </td><td>
+                        Why you are selling this device $1000 more expensive than the microsoft website? i7 , 32gb , 1t is $2699 on the website and it is $3500 here !!!  </td></tr>
+                    <tr><td>A: </td><td>
+                        Please check to confirm seller is Amazon. You will get it for same price or less as its sold on Microsoft website.Thanks</td></tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr><td>Q: </td><td>
+                        the processor is listed as "3 GHz apple_ci7" in the product description. This is supposed to be a i7? </td></tr>
+                    <tr><td>A: </td><td>
+                        The processor is an Intel Core i7.</td></tr>    
+                </table>
+            </div>
+            <div id="more" class="question" style="display: none;">
+                <div>
+                    <table>
+                        <tr><td>Q: </td><td>
+                            Is the stylus pen included? </td></tr>
+                        <tr><td>A: </td><td>Thank you for your question. Surface Slim Pen 2 is sold separately.</td></tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr><td>Q: </td><td>
+                            Why you are selling this device $1000 more expensive than the microsoft website? i7 , 32gb , 1t is $2699 on the website and it is $3500 here !!!  </td></tr>
+                        <tr><td>A: </td><td>
+                            Please check to confirm seller is Amazon. You will get it for same price or less as its sold on Microsoft website.Thanks</td></tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr><td>Q: </td><td>
+                            the processor is listed as "3 GHz apple_ci7" in the product description. This is supposed to be a i7? </td></tr>
+                        <tr><td>A: </td><td>
+                            The processor is an Intel Core i7.</td></tr>    
+                    </table>
+                </div>
+    
+            </div>
+            <font style="text-align: left;"><span onclick="showMore();">More questions...</span><br><br></font>
+        </div>
+        </section>
+      </center>
+
+      <a class="top-button" href="#toplogo"><img src="../photo/top.png" alt="top"></a>
+
+
+      <div class="bot-nav">
+        <ul>
+          <li><a href="#toplogo">
+            <img class="blogo" src="../photo/logo2.png" alt="logo">
+          </a></li>
+          <li><a class="f-text" href="./about.html">About</a></li>
+          <li><a class="f-text" href="./faq.html">FAQ</a></li>
+          <li class="right"><a href="#twitter">
+              <img class="f-icon" src="../photo/twitter.png" alt="twitter">
+            </a></li>
+          <li class="right"><a href="#facebook">
+            <img class="f-icon" src="../photo/facebook.png" alt="facebook">
+          </a></li>
+          <li class="right"><a href="#instagram">
+            <img class="f-icon" src="../photo/instagram.png" alt="instagram">
+          </a></li>
+        </ul>
+      </div>
+      <div class="item4">© 2022 ESpace, Inc.</div>
+    </div>
+  </body>
+</html>

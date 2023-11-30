@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="../style/faq.css">
+    
+    <script src="../javascript/login.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+
+  </head>  
+    <body onload="checkUser();checkCart();">
+
+    <div class="grid-container">
+      <div class="logo-space" id="toplogo">
+        <a href="../storefront/home.html"><img src="../photo/logo2.png" class="h-logo"></a>
+      </div>
+      <div class="top-nav">
+        <ul>
+          <li><a class="active" href="./home.html">Home</a></li>
+          <li><a href="./allProduct.html">Product</a></li>
+      <li class="right"><span class="navAnchor" id="cart" onclick="checkLoginStatus('../storefront/cart.php');">Cart<span id="cartNumber"></span></span></li>
+      <li class="right"><span class="navAnchor" onclick="checkLoginStatus('../storefront/user.html');">User</span></li>
+        <li class="right">
+          <div class="header-dropdown-container" id="userLogOuted">
+            <button type="button" class="header-dropdown-button">Login</button>
+            <div class="header-dropdown-content">
+              <div><a href="../storefront/login.php" class="header-dropdown-login" style="font-size: 1em;" onclick="saveURL();">Login</a></div>
+              <div><span>Not a user?<a href="../storefront/signup.php" class="anchor">Sign up today.</a></span></div>
+            </div>
+          </div>
+          <div class="header-dropdown-container" id="userLogined" style="display: none;">
+            <button type="button" class="header-dropdown-button" id="nav-user"></button>
+            <div class="header-dropdown-content">
+              <div><button class="header-dropdown-login" onclick="logOut();">Log out</button></div>
+            </div>
+          </div>
+    </li>
+        </ul>
+      </div>
+
+      <div class="promotion1">
+        <a href="../storefront/signup.php" id="promotion1">
+          FREE STANDARD SHIPPING & RETURN | JOIN NOW GET 25% Off
+        </a>
+        <p>The Best way to buy the laptops you love.</p>
+      </div>
+
+      <center>
+      <div class="question">
+        <h2>How can we help?</h2>
+        <div class="search">
+          <input type="search" placeholder="Type your question here"><button type="button">Search</button>
+        </div><br>
+
+        <table align="center">
+          <tr>
+            <td>
+              <span class="title">Ordering</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Editing an order</a></li>
+                <li><a href="#">Remove Order</a></li>
+              </ol>
+            </td>
+            <td>
+              <span class="title">Shipping</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">U.S. shipping policy</a></li>
+                <li><a href="#">How to track my package</a></li>
+                <li><a href="#">Report a delivery issue</a></li>
+              </ol>
+            </td>
+            <td>
+              <span class="title">Payment</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Resolving a declined payment</a></li>
+                <li><a href="#">Manage payment methods</a></li>
+                <li><a href="#">Delete payment methods</a></li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="title">Account</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Problems logging in</a></li>
+                <li><a href="#">Changing password</a></li>
+                <li><a href="#">Changing username</a></li>
+              </ol>
+            </td>
+            <td>
+              <span class="title">Product</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Product specifications</a></li>
+                <li><a href="#">Product warranties</a></li>
+                <li><a href="#">Damaged product</a></li>
+              </ol>
+            </td>
+            <td>
+              <span class="title">Pricing</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Different price than advertised</a></li>
+                <li><a href="#">Price match guarantee</a></li>
+                <li><a href="#">Currently unavailable items</a></li>
+              </ol>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span class="title">Returns</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Returning items</a></li>
+                <li><a href="#">Return shipping fees</a></li>
+                <li><a href="#">Editing ot canceling a return</a></li>
+              </ol>
+            </td>
+            <td>
+              <span class="title">Contact</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">Call customer service</a></li>
+                <li><a href="#">Chat with us</a></li>
+                <li><a href="#">Where to find us</a></li>
+              </ol>
+            </td>
+            <td>
+              <span class="title">Website</span><span class="showall"><a href="#">show all</a></span>
+              <ul>
+                <li><a href="#">How to place order</a></li>
+                <li><a href="#">Information security</a></li>
+                <li><a href="#">License</a></li>
+              </ol>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+      </center>
+
+      <div class="bot-nav">
+        <ul>
+          <li><a href="#toplogo">
+            <img class="blogo" src="../photo/logo2.png" alt="logo">
+          </a></li>
+          <li><a class="f-text" href="./about.html">About</a></li>
+          <li><a class="f-text" href="./faq.html">FAQ</a></li>
+          <li class="right"><a href="#twitter">
+              <img class="f-icon" src="../photo/twitter.png" alt="twitter">
+            </a></li>
+          <li class="right"><a href="#facebook">
+            <img class="f-icon" src="../photo/facebook.png" alt="facebook">
+          </a></li>
+          <li class="right"><a href="#instagram">
+            <img class="f-icon" src="../photo/instagram.png" alt="instagram">
+          </a></li>
+        </ul>
+      </div>
+      <div class="item4">© 2022 ESpace, Inc.</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+body {
+    background-color:rgb(248, 244, 221);
+    width: 100%;
+    min-width: 800px;
+    margin: 0 auto;  
+    align-items: center;
+    text-align: center;
+}
+/*--------------item block--------------*/
+#cart-container {
+    margin: 4%;
+}
+/*if empty*/
+.emptyMessage {
+    font-size: 30px;
+    font-weight: 300;
+}
+/*-----individual item------*/
+.pimage {grid-area: pimage;}
+.pname {grid-area: pname;}
+.pamount{grid-area: pamount;}
+.premove {grid-area: premove;}
+.pprice {grid-area: pprice;}
+
+.item {
+    display: grid;
+    grid-template-areas: 
+    'pimage pname pname pname pname pname pprice'
+    'pimage pamount premove premove premove premove pprice';
+    grid-template-columns: 300px auto auto auto auto auto auto; 
+
+
+    max-width: 1500px;
+    min-width: 600px;
+    height: 158px;
+    background-color: white;
+    margin: 20px auto;
+    border: 1px groove lightgray;
+    border-radius: 8px;
+}
+.item div{
+}
+.pimage {
+    margin: 4px 20px;
+    height: 150px;
+    padding: 0;
+    min-width: 300px;
+
+}
+.pimage img {
+    height: 150px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.pname {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+.pname a{
+    text-decoration: none;
+    color: black;
+}
+.pname a:hover{
+    color: rgb(0, 140, 255);
+}
+
+.pname p {
+    margin: 0;
+    padding: 30px 0 0 0; 
+    height: 70px;
+
+    text-align: left;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.pquantity {
+    height: 58px;
+    text-align: left;
+}
+/**********************/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number]
+{
+  -moz-appearance: textfield;
+}
+
+.pquantity input {
+    width: 25px;
+    height: 42px;
+    line-height: 1.65;
+    float: left;
+    display: block;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: larger;
+    border: 1px solid #eee;
+}
+/********************************************/
+.premove {
+    height: 58px;
+    text-align: left;
+}
+.premove button {
+    height: 29px;
+    padding: 0 8px;
+    margin: 10px 0 19px 0;
+    background-color: white;
+    border: none;
+}
+.premove button:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.removeBtn{
+    font-size: 1em;
+
+}
+.removeBtn:hover{
+    color: rgb(0, 140, 255);
+}
+
+.pprice {
+    height: 98px;
+    padding: 60px 0 0 0;
+
+}
+.pprice p {
+    font-size: 25px;
+    font-weight: 300; 
+    padding: 0 20px;
+    margin: 0;
+}
+
+#checkout-btn {
+    margin-top: 30px;
+}
+#checkout-btn a{
+    font-size: 25px;
+    font-weight: 300;
+    color: black;
+    text-decoration: none;
+    background-color: rgb(251, 251, 175);
+
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 8px 30px;
+    margin: 0 auto;
+}
+#checkout-btn a:hover {
+    background-color: rgb(252, 252, 107);
+}
+.quantityBtn{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transform: translateY(-15px);
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    border-radius: 50%;
+    line-height: 30px;
+    margin: 0 10px;
+}
+.quantityBtn:hover{
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.13);
+}
+.numberDisplay{
+    display: inline-block;
+    width: 40px;
+    height:40px;
+    text-align: center;
+    transform: translateY(-15px);
+    border: 1px solid rgba(128, 128, 128, 0.24);
+    line-height: 40px;
+    margin: 0 10px;
+
+}

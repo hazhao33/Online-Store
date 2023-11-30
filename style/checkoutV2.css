@@ -1,0 +1,224 @@
+body {
+    background-color:rgb(248, 244, 221);
+    width: 100%;
+    min-width: 1000px;
+    margin: 0 auto;  
+    align-items: center;
+    text-align: center;
+}
+
+.gotocart {grid-area: gocart;}
+.item-list-container {grid-area: item;}
+.shipping-info {grid-area: shipping;}
+.payment-info {grid-area: payment;}
+.order-summary-container {grid-area: summary;}
+
+.element-container {
+    display: grid;
+    grid-template-areas:
+    'item item item'
+    'gocart gocart gocart'
+    'shipping payment summary';
+
+    margin: 30px auto;
+    padding: 0 20px;
+    max-width: 1500px;
+    min-width: 960px;
+}
+
+.item-img {grid-area: image;}
+.item-quantity {grid-area: quantity;}
+.item-name {grid-area: name;}
+.item-price {grid-area: price;}
+
+.item-list-container {
+    display: grid;
+    grid-template-areas: 
+    ' image name name quantity price';
+
+    margin: 0 0 30px 0;
+    border: 1px solid gray;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.header {
+    padding: 10px 0;
+    font-weight: bold;
+
+}
+
+/* header */
+.title {
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+/* checkout form */
+.checkOutForm{
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 0 30px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+}
+.checkOutForm input {
+    margin-top: 8px;
+    font-size: 18px;
+    height: 25px;
+    width: auto;
+    padding: 5px;
+}
+
+#shipping-state{
+    margin: 0;
+    margin-top: 8px;
+    font-size: 18px;
+    height: 40px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 2px;
+    outline: none;
+    padding: 5px;
+}
+#shipping-zipcode{
+    width: 125px;
+}
+#exdateContainer{
+    border: 1px solid grey;
+    border-radius: 2px;
+    height: min-content;
+    display: inline-block;
+    margin-top: 8px;
+    padding: none;
+}
+#payment-expdate-month{
+    width: 30px;
+    padding: 5px;
+    border: none;
+    margin-top: 0;
+}
+#payment-expdate-year{
+    width: 30px;
+    padding: 5px;
+    border: none;
+    margin-top: 0;
+
+}
+#payment-CCV{
+    width: 178px;
+}
+
+input .exdate{
+    width: 40px;
+}
+
+/* order summary form */
+.order-summary-container {
+    border: 1px solid gray;
+    border-radius: 8px;
+    margin: 0 30px;
+    min-width: 300px;
+    height: 400px;
+}
+
+.order {grid-area: ordertitle;}
+.total-text {grid-area: ordertext;}
+.total-info {grid-area: orderinfo;}
+.order-btn {grid-area: order-btn;}
+.order-summary-container {
+    display: grid;
+    grid-template-areas: 
+    'ordertitle ordertitle'
+    'ordertext orderinfo'
+    'order-btn order-btn';
+}
+
+.total-text li {
+    list-style-type: none;
+    padding: 5px;
+    font-size: 20px;
+}
+.total-info li {
+    list-style-type: none;
+    text-align: left;
+    padding: 5px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    .shipping-info {
+        margin: 0 5px;
+    }
+    .payment-info {
+        margin: 0 5px;
+    }
+    .order-summary-container {
+        margin: 0 5px;
+    }
+  }
+
+  /* save or place your order button*/
+
+#submitCheckout{
+    width: 280px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400px;
+    background-color: rgb(255, 196, 0);
+    border: 1px solid grey;
+    color: white;
+    border-radius: 3px;
+}
+#submitCheckout:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+.info{
+    display: block;
+    height: 5em;
+    line-height: 5em;
+    /**/
+    background-color: white;
+    border-left: 0 2px 4px 0 grey;
+    border-right: 0 2px 4px 0 grey;
+    
+    
+}
+.inlineImg{
+    height: 5em;
+    display: inline-block;
+    line-height: 5em;
+}
+#goToCart:visited{
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+}
+#goToCart{
+    text-decoration: none;
+    transition: 0.3s;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.747);
+    border-top: 1px solid rgba(128, 128, 128, 0.74);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#goToCart:hover{
+    color: rgb(0, 140, 255);
+}
+#getAddress{
+    vertical-align: -5px;
+}
+#submit-btn{
+    background-color: rgb(255, 196, 0);
+}
+.creditCard{
+    width: 40px;
+}
+#creditCardContainer{
+    text-align: right;
+    padding-right: 30px;
+}

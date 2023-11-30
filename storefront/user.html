@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ESpace window</title>
+    <link rel="stylesheet" href="../style/user.css">
+    
+    <script src="../javascript/login.js"></script>
+    <script src="../javascript/user.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+
+  </head>
+    <body onload="checkUser();checkCart();">
+
+    <div class="grid-container">
+      <div class="logo-space" id="toplogo">
+        <a href="../storefront/home.html"><img src="../photo/logo2.png" class="h-logo"></a>
+      </div>
+      <div class="top-nav">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./allProduct.html">Product</a></li>
+          <li class="right"><span class="navAnchor" id="cart" onclick="checkLoginStatus('../storefront/cart.php');">Cart<span id="cartNumber"></span></span></li>
+          <li class="right"><span class="navAnchor active" onclick="checkLoginStatus('../storefront/user.html');">User</span></li>
+            <li class="right">
+          <div class="header-dropdown-container" id="userLogOuted">
+            <button type="button" class="header-dropdown-button">Login</button>
+            <div class="header-dropdown-content">
+              <div><a href="../storefront/login.php" class="header-dropdown-login" style="font-size: 1em;" onclick="saveURL();">Login</a></div>
+              <div><span>Not a user?<a href="../storefront/signup.php" class="anchor">Sign up today.</a></span></div>
+            </div>
+          </div>
+          <div class="header-dropdown-container" id="userLogined" style="display: none;">
+            <button type="button" class="header-dropdown-button" id="nav-user"></button>
+            <div class="header-dropdown-content">
+              <div><button class="header-dropdown-login" onclick="logOut();">Log out</button></div>
+            </div>
+          </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bot-nav">
+        <ul>
+          <li><a href="#toplogo"><img class="blogo" src="../photo/logo2.png" alt="logo"></a></li>
+          <li><a class="f-text" href="./about.html">About</a></li>
+          <li><a class="f-text" href="./faq.html">FAQ</a></li>
+          <li class="right"><a href="#twitter"><img class="f-icon" src="../photo/twitter.png" alt="twitter"></a></li>
+          <li class="right"><a href="#facebook"><img class="f-icon" src="../photo/facebook.png" alt="facebook"></a></li>
+          <li class="right"><a href="#instagram"><img class="f-icon" src="../photo/instagram.png" alt="instagram"></a></li>
+        </ul>
+      </div>
+      <div class="footer">© 2022 ESpace, Inc.</div>
+      <div class="sidenav">
+        <a href="#Account">Account</a><br><br>
+        <a href="#Address">Address</a><br><br>
+        <a href="#Payment">Payment</a><br><br>
+        <a href="#Permission">Permission</a>
+      </div>
+
+      <div class="accountInfo">
+        <h1 id="Account">Account Information</h1>
+        <form>
+          <p>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" size="31"
+            onblur="isValidText(this, document.getElementById('account-fnameHelp'))">
+            <span id="account-fnameHelp"></span>
+          </p>
+          <p>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" size="31"
+            onblur="isValidText(this, document.getElementById('account-lnameHelp'))">
+            <span id="account-lnameHelp"></span>
+          </p>
+          <p>
+            <label for="id">User ID:</label>
+            <input type="text" id="id" name="id" size="34"
+            onblur="isUserIdValid(this, document.getElementById('account-userIdHelp'))">
+            <span id="account-userIdHelp"></span>
+          </p>
+          <p>
+            <label for="newemail">Email:</label>
+            <input type="email" id="newemail" name="newemail" size="36"
+            onblur="isEmailValid(this, document.getElementById('account-emailHelp'))">
+            <span id="account-emailHelp"></span>
+          </p>
+          <p>
+            <label for="phonenum">Phone Number:</label>
+            <input type="number" id="phonenum" name="phonenum" size="27"
+            onblur="isPhoneValid(this, document.getElementById('account-phonenumHelp'))">
+            <span id="account-phonenumHelp"></span>
+          </p> 
+          <p>    
+            <label for="pcode">New Password:</label>
+            <input type="password" id="pcode" name="pcode" size="27"
+            onblur="isPasswordValid(this, document.getElementById('account-passwordHelp'))">
+            <span id="account-passwordHelp"></span>
+          </p>
+          <p>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" max="2022-12-31" min="1900-1-1" required>
+          </p>
+
+          <br><input class="submit" type="submit" value="Save Change">
+        </form>
+      </div>
+
+      <div class="adressInfo">
+        <h1 id="Address">Address Information</h1>
+        <form>
+          <p>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" required size="29"
+            onblur="isValidText(this, document.getElementById('Address-fnameHelp'))">
+            <span id="Address-fnameHelp"></span>
+          </p>
+          <p>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required size="30"
+            onblur="isValidText(this, document.getElementById('Address-lnameHelp'))">
+            <span id="Address-lnameHelp"></span>
+          </p>
+          <p>
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" required size="35"
+            onblur="isStreetValid(this, document.getElementById('Address-streetHelp'))">
+            <span id="Address-streetHelp"></span>
+          </p>
+          <p>
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required size="37"
+            onblur="isCityValid(this, document.getElementById('Address-cityHelp'))">
+            <span id="Address-cityHelp"></span>
+          </p>
+          <p>
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required size="36"
+            onblur="isStateValid(this, document.getElementById('Address-stateHelp'))">
+            <span id="Address-stateHelp"></span>
+          </p>
+          <p>
+            <label for="zipCode">Zip Code:</label>
+            <input type="number" id="zipCode" name="zipCode" required size="32"
+            onblur="isZipCodeText(this, document.getElementById('Address-zipCodeHelp'))">
+            <span id="Address-zipCodeHelp"></span>
+          </p>
+          <p>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required size="33"
+            onblur="isCountryValid(this, document.getElementById('Address-countryHelp'))">
+            <span id="Address-countryHelp"></span>
+          </p>
+          <br><input class="submit" type="submit" value="Save Change">
+        </form>
+      </div>
+
+      <div class="paymentInfo">
+        <h1 id="Payment">Payment Information</h1>
+        <form>
+          <p>
+            <label for="ccName">Full Name:</label>
+            <input type="text" id="ccName" name="ccName" required size="30"
+            onblur="isFullNameValid(this, document.getElementById('payment-ccNameHelp'))">
+            <span id="payment-ccNameHelp"></span>
+          </p>
+          <p>
+            <label for="creditCardNum">Credit Card Number:</label>
+            <input type="text" id="creditCardNum" name="creditCardNum" required 
+            onblur="isCreditCardValid(this, document.getElementById('payment-creditCardNum'))">
+            <span id="payment-creditCardNum"></span>
+          </p>
+          <p>
+            <label for="ccCvv">CVV Code:</label>
+            <input type="text" id="ccCvv" name="ccCvv" required size="31"
+            onblur="isCvvValid(this, document.getElementById('payment-ccCvvHelp'))">
+            <span id="payment-ccCvvHelp"></span>
+          </p>
+          <p>
+            <label for="ccExpDate">Exp Date:</label>
+            <input type="text" id="ccExpDate" name="ccExpDate" value="01/2022" size="32"
+            onblur="isExpDateValid(this, document.getElementById('payment-ccYearHelp'))">
+            <span id="payment-ccYearHelp"></span>
+          </p>
+          <p>
+            <label for="ccState">State:</label>
+            <input type="text" id="ccState" name="ccState" required size="36"
+            onblur="isStateValid(this, document.getElementById('payment-ccStateHelp'))">
+            <span id="payment-ccStateHelp"></span>
+          </p>
+          <p>
+            <label for="ccZipCode">Zip Code:</label>
+            <input type="text" id="ccZipCode" name="ccZipCode" required size="32"
+            onblur="isZipCodeText(this, document.getElementById('payment-ccZipCodeHelp'))">
+            <span id="payment-ccZipCodeHelp"></span>
+          </p>
+          <p>
+            <label for="ccCountry">Country:</label>
+          <input type="text" id="ccCountry" name="ccCountry" required size="33"
+          onblur="isCountryValid(this, document.getElementById('payment-ccCountryHelp'))">
+          <span id="payment-ccCountryHelp"></span>
+          </p>
+          <br><input class="submit" type="submit" value="Save Change">
+        </form>
+      </div>
+
+      <div class="permissionInfo">
+        <h1 id="Permission">Permission Setting</h1>
+        <form>
+          <p>Store and/or access information on a device</p>
+          <label for="yes">Yes</label>
+          <input class="button" type="radio" id="yes" name="allow_log" value="yes">
+          <label for="no">No</label>
+          <input class="button" type="radio" id="no" name="allow_log" value="no">
+
+          <p>Create a personalised ads profile</p>
+          <label for="yes">Yes</label>
+          <input class="button" type="radio" id="yes" name="a_personal_ad" value="yes">
+          <label for="no">No</label>
+          <input class="button" type="radio" id="no" name="a_personal_ad" value="no">
+
+          <p>Create a personalised content profile</p>
+          <label for="yes">Yes</label>
+          <input class="button" type="radio" id="yes" name="personal_content" value="yes">
+          <label for="no">No</label>
+          <input class="button" type="radio" id="no" name="personal_content" value="no">
+
+          <p>Develop and improve products</p>
+          <label for="yes">Yes</label>
+          <input class="button" type="radio" id="yes" name="impovep" value="yes">
+          <label for="no">No</label>
+          <input class="button" type="radio" id="no" name="impovep" value="no">
+
+          <br><input class="submit" type="submit" value="Save Change">
+        </form>
+      </div> 
+
+    </div>
+  </body>
+</html>

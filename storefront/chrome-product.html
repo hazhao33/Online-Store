@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HP Chromebook 14 Laptop, 14" FHD Touchscreen, Intel Quad-Core i5-1135G7 (Beat i7-1065G7), 8GB DDR4 RAM, 1TB PCIe SSD, WiFi 6, BT 5, Fingerprint Reader, Backlit Keyboard, Chrome OS, 64GB Flash Drive</title>
+    <link rel="stylesheet" href="../style/product.css">
+    
+    <script src="../javascript/product.js"></script>
+    <script src="../javascript/login.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+
+  </head>  
+    <body onload="checkUser();checkCart();">
+
+    <div class="grid-container">
+      <div class="logo-space" id="toplogo">
+        <a href="../storefront/home.html"><img src="../photo/logo2.png" class="h-logo"></a>
+      </div>
+      <div class="top-nav">
+        <ul>
+          <li><a class="active" href="./home.html">Home</a></li>
+          <li><a href="./allProduct.html">Product</a></li>
+      <li class="right"><span class="navAnchor" id="cart" onclick="checkLoginStatus('../storefront/cart.php');">Cart<span id="cartNumber"></span></span></li>
+      <li class="right"><span class="navAnchor" onclick="checkLoginStatus('../storefront/user.html');">User</span></li>
+        <li class="right">
+          <div class="header-dropdown-container" id="userLogOuted">
+            <button type="button" class="header-dropdown-button">Login</button>
+            <div class="header-dropdown-content">
+              <div><a href="../storefront/login.php" class="header-dropdown-login" style="font-size: 1em;" onclick="saveURL();">Login</a></div>
+              <div><span>Not a user?<a href="../storefront/signup.php" class="anchor">Sign up today.</a></span></div>
+            </div>
+          </div>
+          <div class="header-dropdown-container" id="userLogined" style="display: none;">
+            <button type="button" class="header-dropdown-button" id="nav-user"></button>
+            <div class="header-dropdown-content">
+              <div><button class="header-dropdown-login" onclick="logOut();">Log out</button></div>
+            </div>
+          </div>
+        </li>
+        </ul>
+      </div>
+
+      <div class="promotion1">
+        <a href="../storefront/signup.php" id="promotion1">
+          FREE STANDARD SHIPPING & RETURN | JOIN NOW GET 25% Off
+        </a>
+        <p>The Best way to buy the laptops you love.</p>
+      </div>
+
+      <center>
+        <section class="content">
+        <div class="product">
+            <div class="preview">
+                <div class="icon-container">
+                    <div class="singleicon p1">
+                        <div class="icon"><img src="../photo/product/chrome/p1.jpg" alt=""onClick="changePreview(this);currentSlide(1);"></div>
+                        <div class="previewholder"><img src="../photo/product/chrome/p1.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p2">
+                        <div class="icon"><img src="../photo/product/chrome/p2.jpg" alt=""onClick="changePreview(this);currentSlide(2);"></div>
+                        <div class="previewholder"><img src="../photo/product/chrome/p2.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p3">
+                        <div class="icon"><img src="../photo/product/chrome/p3.jpg" alt=""onClick="changePreview(this);currentSlide(3);"></div>
+                        <div class="previewholder"><img src="../photo/product/chrome/p3.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p4">
+                        <div class="icon"><img src="../photo/product/chrome/p4.jpg" alt=""onClick="changePreview(this);currentSlide(4);"></div>
+                        <div class="previewholder"><img src="../photo/product/chrome/p4.jpg" alt=""></div>
+                    </div>
+                    <div class="singleicon p5">
+                        <div class="icon"><img src="../photo/product/chrome/p5.jpg" alt=""onClick="changePreview(this);currentSlide(5);"></div>
+                        <div class="previewholder"><img src="../photo/product/chrome/p5.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="preview-area">
+                    <img src="../photo/product/chrome/p1.jpg" alt="" id="preview-area" onClick="openModal(this);currentSlide(slideIndex);">
+                </div>
+            </div>
+            <div id="modal-slide" class="modal">
+                <div id="modal-slide-content" class="modal-content">
+                    <img src="../photo/product/chrome/p1.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/chrome/p2.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/chrome/p3.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/chrome/p4.jpg" class="myPreviews" onclick="closeModal();">
+                    <img src="../photo/product/chrome/p5.jpg" class="myPreviews" onclick="closeModal();">
+                    <button class="arrow-button position-left-center" onclick="plusDivs(-1);">&#10094;</button>
+                    <button class="arrow-button position-right-center" onclick="plusDivs(1);">&#10095;</button>
+                    <div id="index-container" class="position-bottom-center">
+                        <div class="index" onclick="currentSlide(1)"></div>
+                        <div class="index" onclick="currentSlide(2)"></div>
+                        <div class="index" onclick="currentSlide(3)"></div>
+                        <div class="index" onclick="currentSlide(4)"></div>
+                        <div class="index" onclick="currentSlide(5)"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="product-name"><p>HP Chromebook 14 Laptop, 14" FHD Touchscreen, Intel Quad-Core i5-1135G7 (Beat i7-1065G7), 8GB DDR4 RAM, 1TB PCIe SSD, WiFi 6, BT 5, Fingerprint Reader, Backlit Keyboard, Chrome OS, 64GB Flash Drive </p></div>
+                <div class="interaction">
+                    <div name="rating"><img src="../photo/product/rating.png" alt="rating"></div>
+                    <div class="answer"><a href="#question">60 answered question</a></div>
+                    <div class="share dropdown-container">
+                        <div class="dropdown-button"><img src="../photo/product/share.png" alt="share">SHARE</div>
+                        <div class="dropdown-content">
+                            <a href="#"><img src="../photo/product/email.png" alt="email">Email</a>
+                            <a href="#"><img src="../photo/product/facebook.png" alt="facebook">Facebook</a>
+                            <a href="#"><img src="../photo/product/twitter.png" alt="twitter">Twitter</a>
+                            <a href="#"><img src="../photo/product/pinterest.png" alt="pinterest">Pinterest</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="choice">
+                    <div class="Memory choice-column">
+                        <p>Memory:</p>
+                        <div class="active"><a href="#">8GB</a></div>
+                        <div><a href="#">16GB</a></div>
+                    </div>
+
+                    <div class="capacity choice-column">
+                        <p>Capacity:</p>
+                        <div class="active"><a href="#">512GB</a></div>
+                        <div><a href="#">&nbsp;&nbsp;1TB</a></div>
+                    </div>
+                </div>
+                <div class="product-briefspec">
+                    <table>
+                        <tr><td><b>Series</b></td><td>HP Chromebook</td></tr>
+                        <tr><td><b>Brand</b></td><td>HP</td></tr>
+                        <tr><td><b>Screen Size</b></td><td>14 Inches</td></tr>
+                        <tr><td><b>Operating System</b></td><td>Chrome OS</td></tr>
+                        <tr><td><b>Human Interface</b></td><td>Touchscreen, Micphone,Keyboard</td></tr>
+                        <tr><td><b>CPU Manufacturer</b></td><td>Intel®</td></tr>
+                        <tr><td><b>Card Description</b></td><td>Integrated</td></tr>
+                        <tr><td><b>Hard Disk Size</b></td><td>1TB</td></tr>
+                        <tr><td><b>Processor</b></td><td>4</td></tr>
+                        <tr><td><b>Connectivity Technology</b></td><td>Bluetooth, Wi-Fi</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="product-addtocart">
+            <div>
+                <p>2021 MacbookPro 14" Spacegrey 512GB 8-Core CPU 14-Core GPU</p>
+                <p>$<font size="+3">1799</font>.99</p>
+            </div>
+            <div>
+                <button type="button" onclick="checkIfLogin(5,'HP Chromebook 14',1799.99,'../photo/chrome1.jpg');">Add To Cart</button>
+            </div>
+        </div>
+        <div>
+            <table width="70%" cellspacing="0" cellpadding="5" align="center" valign="top" class="detail-technics">
+                <h2><center>Technical Details</center></h2>
+                <tr><td><b>Standing screen display size</b></td><td>14 Inches </td></tr>
+                <tr><td><b>Screen Resolution </b></td><td>1920x1080</td></tr>
+                <tr><td><b>Max Screen Resolution </b></td><td>1920x1080 </td></tr>
+                <tr><td><b>Processor </b></td><td>2.4 GHz core_i5 </td></tr>
+                <tr><td><b>RAM </b></td><td>8 GB DDR4 </td></tr>
+                <tr><td><b>Hard Drive </b></td><td>1 TB PCIe SSD </td></tr>
+                <tr><td><b>Graphics Coprocessor </b></td><td>Intel Iris Xᵉ Graphics </td></tr>
+                <tr><td><b>Chipset Brand </b></td><td>Intel </td></tr>
+                <tr><td><b>Card Description </b></td><td>Integrated </td></tr>
+                <tr><td><b>Wireless Type </b></td><td>Bluetooth, 802.11a </td></tr>
+                <tr><td><b>Average Battery Life (in hours) </b></td><td>13.5 Hours </td></tr>
+                <tr><td><b>ASIN </b></td><td>B07XF55D7Z </td></tr>
+                <tr><td><b>Date First Available </b></td><td>December 23, 2021 </td></tr>
+              </table>
+
+        </div>
+
+        <div class="product-display">
+            <p class="title">similar product</p>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/similar1.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">HP Pavilion 15 15.6" i7 16GB RAM 512 SSD</a></p><p>$959.00</p></div>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/similar2.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">HP 15 15.6" i7 16GB RAM 256GB SSD</a></p><p>$929.00</p></div>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/similar3.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">HP 17.3 i3 16GB RAM 1TB HDD</a></p><p>$699.99</p></div>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/similar4.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">HP 15 15.6" AMD Ryzen 7 8GB RAM 256 SSD</a></p><p>$617.99</p></div>
+        </div>
+        <div class="product-display">
+            <p class="title">people buy it also buy</p>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/mouse.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">HP Wireless Mouse 200 </a></p><p>$14.99</p></div>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/hdd.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">WD 5TB Elements Portable External Hard Drive HDD</a></p><p>$99.99</p></div>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/flashdrive.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">2TB USB Flash Drive 3.0</a></p><p>$36.00</p></div>
+            <div class="item" id=""><a href="../storefront/chrome-product.html"><img src="../photo/product/chrome/bag.jpg"></a><p class="item-name"><a href="../storefront/chrome-product.html">MOSISO Laptop Sleeve Bag</a></p><p>$18.99</p></div>
+        </div>
+        <div class="question" id="question">
+            <h1>Frequently ask question:</h1>
+            <div class="search">
+                <input type="search" placeholder="Type your question here"><button type="button">Search</button>
+            </div>
+            <div>
+                <table>
+                    <tr><td>Q: </td><td>
+                        Is the stylus pen included? </td></tr>
+                    <tr><td>A: </td><td>Yes. The stylus pen is included in the buddle.</td></tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr><td>Q: </td><td>
+                        Does it has warranty?</td></tr>
+                    <tr><td>A: </td><td>
+                        Yes. It has one year warranty comes with its manufactory. </td></tr>
+                </table>
+            </div>
+            <div>
+                <table>
+                    <tr><td>Q: </td><td>
+                        the processor is listed as "3 GHz apple_ci7" in the product description. This is supposed to be a i7? </td></tr>
+                    <tr><td>A: </td><td>
+                        The processor is an Intel Core i5.</td></tr>    
+                </table>
+            </div>
+            <div id="more" class="question" style="display: none;">
+                <div>
+                    <table>
+                        <tr><td>Q: </td><td>
+                            Is the stylus pen included? </td></tr>
+                        <tr><td>A: </td><td>Thank you for your question. Surface Slim Pen 2 is sold separately.</td></tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr><td>Q: </td><td>
+                            Why you are selling this device $1000 more expensive than the microsoft website? i7 , 32gb , 1t is $2699 on the website and it is $3500 here !!!  </td></tr>
+                        <tr><td>A: </td><td>
+                            Please check to confirm seller is Amazon. You will get it for same price or less as its sold on Microsoft website.Thanks</td></tr>
+                    </table>
+                </div>
+                <div>
+                    <table>
+                        <tr><td>Q: </td><td>
+                            the processor is listed as "3 GHz apple_ci7" in the product description. This is supposed to be a i7? </td></tr>
+                        <tr><td>A: </td><td>
+                            The processor is an Intel Core i7.</td></tr>    
+                    </table>
+                </div>
+    
+            </div>
+            <font style="text-align: left;"><span onclick="showMore();">More questions...</span><br><br></font>
+        </div>
+        </section>
+      </center>
+
+      <a class="top-button" href="#toplogo"><img src="../photo/top.png" alt="top"></a>
+
+
+      <div class="bot-nav">
+        <ul>
+          <li><a href="#toplogo">
+            <img class="blogo" src="../photo/logo2.png" alt="logo">
+          </a></li>
+          <li><a class="f-text" href="./about.html">About</a></li>
+          <li><a class="f-text" href="./faq.html">FAQ</a></li>
+          <li class="right"><a href="#twitter">
+              <img class="f-icon" src="../photo/twitter.png" alt="twitter">
+            </a></li>
+          <li class="right"><a href="#facebook">
+            <img class="f-icon" src="../photo/facebook.png" alt="facebook">
+          </a></li>
+          <li class="right"><a href="#instagram">
+            <img class="f-icon" src="../photo/instagram.png" alt="instagram">
+          </a></li>
+        </ul>
+      </div>
+      <div class="item4">© 2022 ESpace, Inc.</div>
+    </div>
+  </body>
+</html>

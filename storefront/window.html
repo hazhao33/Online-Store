@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ESpace Window</title>
+    <link rel="stylesheet" type="text/css" href="../style/headFoot.css">
+    <link rel="stylesheet" href="../style/allProduct.css">
+    
+    <script src="../javascript/login.js"></script>
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="https://kit.fontawesome.com/412bafbc7b.js" crossorigin="anonymous"></script>
+
+    
+  </head>  
+  <body onload="checkUser();checkCart();">
+
+    <div class="logo-space" id="toplogo">
+      <a href="../storefront/home.html"><img src="../photo/logo2.png" class="h-logo"></a>
+    </div>
+    <div class="top-nav">
+      <ul>
+        <li><a href="./home.html">Home</a></li>
+        <!--
+        <li>
+          <form>
+            <input id="searchbar" type="text" name="search" placeholder="Search..">
+          </form>
+        </li>
+        -->
+        <li><a class="active" href="./allProduct.html">Product</a></li>
+        <li class="right"><a href="./cart.php" id="cart">Cart<span id="cartNumber"></span></a></li>
+        <li class="right"><a href="./user.html">User</a></li>
+        <li class="right">
+          <div class="header-dropdown-container" id="userLogOuted">
+            <button type="button" class="header-dropdown-button">Login</button>
+            <div class="header-dropdown-content">
+              <div><a href="../storefront/login.php" class="header-dropdown-login" style="font-size: 1em;" onclick="saveURL();">Login</a></div>
+              <div><span>Not a user?<a href="../storefront/signup.php" class="anchor">Sign up today.</a></span></div>
+            </div>
+          </div>
+          <div class="header-dropdown-container" id="userLogined" style="display: none;">
+            <button type="button" class="header-dropdown-button" id="nav-user"></button>
+            <div class="header-dropdown-content">
+              <div><button class="header-dropdown-login" onclick="logOut();">Log out</button></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+
+    <div class="promotion1">
+         <a href="../storefront/signup.php">
+        FREE STANDARD SHIPPING & RETURN | JOIN NOW GET 25% Off
+         </a>
+    </div>
+    <!----------top bar---------------------------------->
+    <div class="top-bar">
+        <a href="./allProduct.html">All Product</a>
+        <a class="active" href="./window.html">Window</a>
+        <a href="./apple.html">Apple</a>
+        <a href="./chrome.html">Chrome</a>
+    </div>
+    <!--------------------------------------------------->
+    <div class="product-container">
+        <div class="item" id="1">
+            <a href="./window-product.html">
+                <img class="item-img" src="../photo/window1.jpeg" alt="">
+            </a>
+            <h2 class="item-name">Microsoft Surface Studio</h2>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+            <h2 class="item-price">Price: $<span class="price">1799.99</span></h2>
+            <button class="addCart-btn" type="button" onclick="checkIfLogin(1,'Microsoft Surface Studio',1799.99,'../photo/window1.jpeg');">Add to Cart</button>
+        </div>
+        <div class="item" id="2">
+            <a href="./window-product.html">
+                <img class="item-img" src="../photo/window2.png" alt="">
+            </a>
+            <h2 class="item-name">Razer Bland 15</h2>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h2 class="item-price">Price: $<span class="price">2607.99</span></h2>
+            <button class="addCart-btn" type="button" onclick="checkIfLogin(2,'Razer Bland 15',2607.99,'../photo/window2.png');">Add to Cart</button>
+        </div>
+        <div class="item" id="3">
+            <a href="./window-product.html">
+                <img class="item-img" src="../photo/window3.jpeg" alt="">
+            </a>
+            <h2 class="item-name">Dell 9310 XPS 2 in 1</h2>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+            </div>
+            <h2 class="item-price">Price: $<span class="price">1379.99</span></h2>
+            <button class="addCart-btn" type="button" onclick="checkIfLogin(3,'Dell 9310 XPS 2 in 1',1379.99,'../photo/window3.jpeg');">Add to Cart</button>
+        </div>
+        <div class="item" id="4">
+            <a href="./window-product.html">
+                <img class="item-img" src="../photo/window4.png" alt="">
+            </a>
+            <h2 class="item-name">ASUS ROG Strix G15</h2>
+            <div class="star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h2 class="item-price">Price: $<span class="price">1125.99</span></h2>
+            <button class="addCart-btn" type="button" onclick="checkIfLogin(4,'ASUS ROG Strix G15',1125.99,'../photo/window4.png');">Add to Cart</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--------------------------------------------------->
+
+    <div class="bot-nav">
+        <ul>
+          <li><a href="#toplogo"><img class="blogo" src="../photo/logo2.png" alt="logo"></a></li>
+          <li><a class="f-text" href="./about.html">About</a></li>
+          <li><a class="f-text" href="./faq.html">FAQ</a></li>
+          <li class="right"><a href="#twitter"><img class="ficon ficon-r" src="../photo/twitter.png" alt="twitter"></a></li>
+          <li class="right"><a href="#facebook"><img class="ficon ficon-m" src="../photo/facebook.png" alt="facebook"></a></li>
+          <li class="right"><a href="#instagram"><img class="ficon ficon-l" src="../photo/instagram.png" alt="instagram"></a></li>
+        </ul>
+    </div>
+    <div class="footer">© 2022 ESpace, Inc.</div>
+
+  </body>
+</html>
